@@ -39,15 +39,15 @@ public class App {
       somaNotas += (notasAtividades[i] * pesosAtividades[i]);
     }
 
-    double finalScore = (double) somaNotas / somaPesos;
-    
-    if (finalScore < 85) {
+    double notaFinal = (double) somaNotas / somaPesos;
+
+    if (notaFinal < 85) {
       System.out.println(
           "Lamentamos informar que, com base na sua pontuação alcançada neste período, "
-              + finalScore
+              + notaFinal
               + "%, você não atingiu a pontuação mínima necessária para sua aprovação.");
     } else {
-      System.out.println("Parabéns! Você alcançou " + finalScore
+      System.out.println("Parabéns! Você alcançou " + notaFinal
           + "%! E temos o prazer de informar que você obteve aprovação!");
     }
   }
